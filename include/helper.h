@@ -6,3 +6,4 @@ void menu_keymap();
 void opcao_layout(int opcao_keymap); 
 void menu_disco();
 void pausa(void);
+void menu_formatar();

@@ -20,5 +20,10 @@ void tratar_opcao(int opcao) {
         limpar_tela();
         menu_disco();
         break;
+
+        case 3:
+        limpar_tela();
+        menu_formatar();
+        break;
     }
 }

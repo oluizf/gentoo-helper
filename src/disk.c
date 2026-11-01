@@ -38,7 +38,7 @@ switch (opcao_disco) {
                 while (getchar() != '\n');
                 break;
             }
-            while (getchar() != '\n'); /* Drena o Enter residual */
+            while (getchar() != '\n'); 
 
             limpar_tela();
             snprintf(comando, sizeof(comando), "%s %s",
