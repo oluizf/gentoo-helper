@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "../include/helper.h"
 
 void
 menu_keymap() {
@@ -25,18 +26,22 @@ menu_keymap() {
 
         case 1:
             system("loadkeys br-abnt2");
+            pause();
             break;
 
         case 2:
             system("loadkeys us");
+            pause();
             break;
 
         case 3:
             system("loadkeys us-intl");
+            pausa();
             break;
 
         case 4:
             system("loadkeys es");
+            pausa();
             break;
 
         default:
