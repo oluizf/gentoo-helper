@@ -14,9 +14,11 @@ void tratar_opcao(int opcao) {
         case 1:
         limpar_tela();
         menu_keymap();
+        break;
 
         case 2:
         limpar_tela();
         menu_disco();
+        break;
     }
 }

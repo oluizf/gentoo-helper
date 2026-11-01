@@ -26,12 +26,12 @@ menu_keymap() {
 
         case 1:
             system("loadkeys br-abnt2");
-            pause();
+            pausa();
             break;
 
         case 2:
             system("loadkeys us");
-            pause();
+            pausa();
             break;
 
         case 3:
