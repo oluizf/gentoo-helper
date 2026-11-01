@@ -4,3 +4,5 @@ int ler_opcao(void);
 void tratar_opcao(int opcao);
 void menu_keymap();
 void opcao_layout(int opcao_keymap); 
+void menu_disco();
+void pausa(void);

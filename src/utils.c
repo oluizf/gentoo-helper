@@ -26,3 +26,10 @@ ler_opcao(void) {
 
     return opcao;
 }
+
+void
+pausa(void)
+{
+    printf("\nPressione ENTER para continuar...");
+    while (getchar() != '\n');
+}
