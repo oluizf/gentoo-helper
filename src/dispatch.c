@@ -25,5 +25,21 @@ void tratar_opcao(int opcao) {
         limpar_tela();
         menu_formatar();
         break;
+
+        case 4:
+        limpar_tela();
+        menu_montar();
+        break;
+
+        case 5:
+        limpar_tela();
+        menu_stage3();
+        break;
+
+        case 10:
+        limpar_tela();
+        menu_ferramentas();
+        break;
+
     }
 }

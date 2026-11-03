@@ -7,3 +7,6 @@ void opcao_layout(int opcao_keymap);
 void menu_disco();
 void pausa(void);
 void menu_formatar();
+void menu_montar();
+void menu_ferramentas();
+void menu_stage3();

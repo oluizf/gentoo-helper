@@ -18,9 +18,9 @@ void menu_formatar() {
     printf("\n");
 
     printf("  [1] EFI (FAT32)     Formatacao /boot/efi (Sistemas UEFI)\n");
-    printf("  [2] BOOT (EXT4)     Formatacao /boot separada (Sistemas BIOS)\n");
+    printf("  [2] SWAP            Inicializar particao de swap\n");
     printf("  [3] ROOT (EXT4)     Formatacao do sistema raiz (/)\n");
-    printf("  [4] SWAP            Inicializar particao de swap\n");
+    printf("  [4] BOOT (EXT4)     Formatacao /boot separada (Sistemas BIOS)\n");
     printf("  [0] VOLTAR          Retornar ao menu principal\n\n");
 
     opcao_formatar = ler_opcao();
@@ -46,10 +46,10 @@ void menu_formatar() {
 
             if(opcao_formatar == 1) {
                 snprintf(comando, sizeof(comando), "mkfs.vfat -F 32 %s", particao);
-            } else if(opcao_formatar == 2 || opcao_formatar == 3) {
+            } else if(opcao_formatar == 3 || opcao_formatar == 4) {
                 snprintf(comando, sizeof(comando), "mkfs.ext4 %s", particao);
-            } else if(opcao_formatar == 4) { 
-                snprintf(comando, sizeof(comando), "mkswap %s", particao);
+            } else if(opcao_formatar == 2) { 
+                snprintf(comando, sizeof(comando), "mkswap %s && swapon %s", particao, particao);
             }
             printf("A executar: %s\n\n", comando);
             system(comando);

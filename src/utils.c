@@ -18,7 +18,7 @@ ler_opcao(void) {
     printf(" Sua escolha: ");
     scanf("%d", &opcao);
 
-    while(opcao < 0 || opcao > 9) {
+    while(opcao < 0 || opcao > 10) {
         printf(" Selecao invalida. Por favor tente novamente\n");
         printf(" Sua escolha: ");
         scanf("%d", &opcao);
